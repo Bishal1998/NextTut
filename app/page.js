@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Hero from '/hero.png'
 import Button from "@/components/Button/Button";
 
 export const metadata = {
@@ -20,7 +19,7 @@ export default function Home() {
                 <Button text='See Our Works' url='/portfolio' />
             </div>
             <div className='flex-1 flex flex-col gap-12'>
-                <Image src={Hero} alt='Hero Image' className='w-full h-[500px] object-contain' />
+                <Image src='/hero.png' alt='Hero Image' className='w-full h-[500px] object-contain' />
             </div>
         </main>
     )
